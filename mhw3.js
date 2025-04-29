@@ -313,7 +313,7 @@ function passaggioFoto(event){
   }
   
   function fecthMeteo(lat, lng) {
-      const apiKey = '7c15ad8a5a0e46a8b62110903251204';  
+      const apiKey = '//';  
       const url=`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${lat},${lng}&lang=it`;
     
       fetch(url).then(onResponseMeteo).then(onJsonMeteo);
@@ -350,7 +350,7 @@ function passaggioFoto(event){
     function fetchTrovaCordinate(event) {
       event.preventDefault(); 
       console.log('Richiesta coordinate');
-      const bingMapsKey = 'ApwhowTOlOwc6jfo5zPH8klAHAy67rO45yu5zJsA-uaIYH8dMnk7xQHQxPfeFUpF';
+      const bingMapsKey = '//';
       const url = 'http://dev.virtualearth.net/REST/v1/Locations?query=' + encodeURIComponent(nomeCitta) + '&key=' + bingMapsKey;
       fetch(url).then(onResponseCordinate).then(onJsonCordinate);
     }
@@ -433,8 +433,8 @@ function passaggioFoto(event){
     
     
     
-    const client_id = "7f6bacba3bd5461983e304f4710f88f6";
-    const client_secret = "a8eabd53422f496188eeee5f52f71af9";
+    const client_id = "//";
+    const client_secret = "//";
     let token;
     fetch("https://accounts.spotify.com/api/token", {
       method: "post",
